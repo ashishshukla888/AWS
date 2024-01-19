@@ -70,7 +70,7 @@ jobs:
   
   Continuous-Deployment:
   # self-hosted
-    runs-on: ip-172-31-7-162
+    runs-on: self-hosted
     needs: build-and-push-ecr-image
     steps:
       - name: Configure AWS credentials
